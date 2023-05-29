@@ -1,0 +1,9 @@
+<form [formGroup]="productForm" (ngSubmit)="onHandleSubmit()">
+  <nav>Name</nav>
+<input type="text" formControlName="name" placeholder="Nhập tên sản phẩm"><br>
+<br>
+<nav>Price</nav>
+<input type="number" formControlName="price"><br>
+<br>
+<button type="submit" [disabled]="!productForm.valid">Thêm</button>
+</form>
